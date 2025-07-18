@@ -15,7 +15,6 @@ public class PalindromeCheck {
         System.out.println(list1);
         List<Integer> list2 = list1.reversed();
         System.out.println(list2);
-
         boolean res = isPalindrome(list1);
         if (res) {
             System.out.println("Yes, it is palindrome");

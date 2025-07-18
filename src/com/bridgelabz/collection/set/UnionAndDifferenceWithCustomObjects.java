@@ -5,46 +5,30 @@ import java.util.TreeSet;
 
 public class UnionAndDifferenceWithCustomObjects {
     public static void main(String[] args) {
-        Person p1=new Person(22,"Anni");
-        Person p2=new Person(18,"Khushi");
-        Person p3=new Person(16,"Nitish");
-        Person p4=new Person(10,"Bob");
-        Person p5=new Person(23,"Lisa");
-        Person p6=new Person(11,"John");
+        Person person1 = new Person(22, "Anni");
+        Person person2 = new Person(18, "Khushi");
+        Person person3 = new Person(16, "Nitish");
+        Person person4 = new Person(10, "Bob");
+        Person person5 = new Person(23, "Lisa");
+        Person person6 = new Person(11, "John");
 
-        Set<Person> setA=new TreeSet<>();
-        setA.add(p1);
-        setA.add(p2);
-        setA.add(p3);
+        Set<Person> setA = new TreeSet<>();
+        setA.add(person1);
+        setA.add(person2);
+        setA.add(person3);
 
-        Set<Person> setB=new TreeSet<>();
-        setB.add(p4);
-        setB.add(p5);
-        setB.add(p6);
+        Set<Person> setB = new TreeSet<>();
+        setB.add(person4);
+        setB.add(person5);
+        setB.add(person6);
 
-        Set<Person> union=getUnion(setA,setB);
+        Set<Person> union = getUnion(setA, setB);
         System.out.println(union);
-
-
-
-
     }
 
     private static Set<Person> getUnion(Set<Person> setA, Set<Person> setB) {
-        Set<Person> unionSet = new TreeSet<>();
-        for (Person p1 : setA) {
-            unionSet.add(p1);
-        }
-        for (Person p2 : setB) {
-            unionSet.add(p2);
-        }
+        Set<Person> unionSet = new TreeSet<>(setA);
+        unionSet.addAll(setB);
         return unionSet;
     }
 }
-// using predefined method
-/*
-private static Set<Person> getUnion(Set<Person> setA, Set<Person> setB) {
-    Set<Person> unionSet = new TreeSet<>(setA);
-    unionSet.addAll(setB);
-    return unionSet;
-}*/

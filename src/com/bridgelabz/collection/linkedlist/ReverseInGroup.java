@@ -13,7 +13,6 @@ public class ReverseInGroup {
         list.add(40);
         list.add(50);
         list.add(60);
-
         System.out.println("Original"+list);
         List<Integer> rl=reverseTheList(list,3);
         System.out.println("Updated list"+rl);

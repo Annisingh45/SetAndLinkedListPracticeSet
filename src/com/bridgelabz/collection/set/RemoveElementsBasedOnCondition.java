@@ -15,15 +15,13 @@ public class RemoveElementsBasedOnCondition {
         set.add(1);
 
         System.out.println(set);
-
-        Iterator<Integer> it = set.iterator();
-        while (it.hasNext()) {
-            int i = it.next();
+        Iterator<Integer> iterator = set.iterator();
+        while (iterator.hasNext()) {
+            int i = iterator.next();
             if (i < 10) {
-                it.remove();
+                iterator.remove();
             }
         }
-
         System.out.println(set);
     }
 }

@@ -59,8 +59,8 @@ public class ImplementingQueueUsingStack {
         queue.dequeue();
         queue.dequeue();
         queue.dequeue();
-        queue.dequeue(); // Now queue is empty
-        System.out.println("Dequeued: " + queue.dequeue()); // Should print message
-        System.out.println("Peek: " + queue.peek()); // Should print message
+        queue.dequeue();
+        System.out.println("Dequeued: " + queue.dequeue());
+        System.out.println("Peek: " + queue.peek());
     }
 }

@@ -1,5 +1,4 @@
 package com.bridgelabz.collection.set;
-
 import java.util.Objects;
 
 public class CustomObjectSetOperations {
@@ -16,19 +15,15 @@ public class CustomObjectSetOperations {
     {
         if(obj instanceof CustomObjectSetOperations)
         {
-            CustomObjectSetOperations p=(CustomObjectSetOperations)obj;
-            return this.age==p.age;
-
+            CustomObjectSetOperations person=(CustomObjectSetOperations)obj;
+            return this.age==person.age;
         }
         return false;
-
-
     }
 
-
-
     @Override
-    public int hashCode() {
+    public int hashCode()
+    {
         return Objects.hash(age);
     }
 

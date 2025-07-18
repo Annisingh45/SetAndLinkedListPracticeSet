@@ -14,7 +14,6 @@ public class RemoveAllOccuranceMain {
         list.add(90);
         list.add(10);
         list.add(20);
-
         System.out.println(list);
         List<Integer> ul=removeAllOccuranceOf(list,20);
         System.out.println(ul);

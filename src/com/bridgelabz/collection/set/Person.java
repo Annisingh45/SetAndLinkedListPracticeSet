@@ -10,13 +10,12 @@ public class Person implements Comparable<Person> {
     }
 
     @Override
-    public String toString()
-    {
-        return "Person: "+"Name is: "+name+" And age is : "+ age;
+    public String toString() {
+        return "Person: " + "Name is: " + name + " And age is : " + age;
     }
 
     @Override
     public int compareTo(Person o) {
-        return this.age-o.age;
+        return this.age - o.age;
     }
 }

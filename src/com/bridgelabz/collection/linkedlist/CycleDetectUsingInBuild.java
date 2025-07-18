@@ -14,10 +14,7 @@ public class CycleDetectUsingInBuild {
         list.add(40);
         list.add(50);
         list.add(60);
-
-
         System.out.println(list);
-
         // Check for duplicates
         boolean hasDuplicates = hasDuplicates(list);
         if (hasDuplicates) {

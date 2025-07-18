@@ -22,11 +22,9 @@ public class MergeSortedLists {
 
         System.out.println("List 1: " + list1);
         System.out.println("List 2: " + list2);
-
         List<Integer> slist = mergeSortedLists(list1, list2);
         System.out.println("Merged Sorted List: " + slist);
     }
-
 
     private static List<Integer> mergeSortedLists(List<Integer> list1, List<Integer> list2) {
         List<Integer> sortedList = new LinkedList<>();

@@ -4,47 +4,41 @@ import java.util.*;
 
 public class ClassSpecificSetBehavior {
     public static void main(String[] args) {
-        List<Integer> l = new LinkedList<>();
-        l.add(5);
-        l.add(3);
-        l.add(5);
-        l.add(1);
-        l.add(2);
+        List<Integer> list = new LinkedList<>();
+        list.add(5);
+        list.add(3);
+        list.add(5);
+        list.add(1);
+        list.add(2);
 
-
-        System.out.println("Normal list: " + l);
-        Set<Integer> res = setImple(l);
+        System.out.println("Normal list: " + list);
+        Set<Integer> res = setImple(list);
         System.out.println("HashSet: " + res);
-        Set<Integer> result = setImp(l);
+        Set<Integer> result = setImp(list);
         System.out.println("LinkedHashSet: " + result);
-        Set<Integer> result1= setIm(l);
-        System.out.println("TreeSet : "+result1);
-
-
+        Set<Integer> result1 = setIm(list);
+        System.out.println("TreeSet : " + result1);
     }
 
     private static Set<Integer> setIm(List<Integer> l) {
-        TreeSet<Integer> ts=new TreeSet<>();
-        for(int var:l)
-        {
-            ts.add(var);
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        for (int var : l) {
+            treeSet.add(var);
         }
-        return ts;
+        return treeSet;
     }
 
     private static Set<Integer> setImp(List<Integer> l) {
-        LinkedHashSet<Integer> list=new LinkedHashSet<>();
-        for(int var:l)
-        {
+        LinkedHashSet<Integer> list = new LinkedHashSet<>();
+        for (int var : l) {
             list.add(var);
         }
         return list;
     }
 
-    private static Set<Integer> setImple(List<Integer> l){
-        Set<Integer> hashSet=new HashSet<>();
-        for(Integer var:l)
-        {
+    private static Set<Integer> setImple(List<Integer> l) {
+        Set<Integer> hashSet = new HashSet<>();
+        for (Integer var : l) {
             hashSet.add(var);
         }
         return hashSet;

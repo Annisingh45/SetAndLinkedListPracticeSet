@@ -12,9 +12,7 @@ public class ReorderList {
         list.add(40);
         list.add(50);
         System.out.println("Original list"+list);
-
         List<Integer> rl = reOrderList(list);
-
         System.out.println("Reordered List: " + rl);
     }
 

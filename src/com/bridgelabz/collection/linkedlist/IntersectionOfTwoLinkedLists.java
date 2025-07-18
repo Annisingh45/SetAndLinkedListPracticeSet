@@ -20,25 +20,9 @@ public class IntersectionOfTwoLinkedLists {
         list2.add(100);
         list2.add(50);
         list2.add(60);
-/*
-        List<Integer> uniqueList=new LinkedList<>();
 
-        for (int i:list1)
-        {
-            for (int j:list2)
-            {
-                if(i==j)
-                    uniqueList.add(i);
-
-            }
-        }*/
-        /*System.out.println(list1);
-        System.out.println(list2);
-        System.out.println(uniqueList);*/
         List<Integer> uniqueList = new LinkedList<>(list1);
         uniqueList.retainAll(list2);
         System.out.println(uniqueList);
-
-
     }
 }
