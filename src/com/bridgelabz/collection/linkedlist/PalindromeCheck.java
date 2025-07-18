@@ -22,8 +22,6 @@ public class PalindromeCheck {
         } else {
             System.out.println("no,it is not palindrome");
         }
-
-
     }
 
     private static boolean isPalindrome(List<Integer> list1) {

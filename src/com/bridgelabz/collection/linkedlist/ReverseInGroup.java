@@ -6,16 +6,16 @@ import java.util.List;
 
 public class ReverseInGroup {
     public static void main(String[] args) {
-        List<Integer> l=new LinkedList<>();
-        l.add(10);
-        l.add(20);
-        l.add(30);
-        l.add(40);
-        l.add(50);
-        l.add(60);
+        List<Integer> list=new LinkedList<>();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+        list.add(60);
 
-        System.out.println("Original"+l);
-        List<Integer> rl=reverseTheList(l,3);
+        System.out.println("Original"+list);
+        List<Integer> rl=reverseTheList(list,3);
         System.out.println("Updated list"+rl);
     }
 

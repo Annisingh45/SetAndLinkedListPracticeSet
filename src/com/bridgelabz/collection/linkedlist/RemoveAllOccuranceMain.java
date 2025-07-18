@@ -28,7 +28,6 @@ public class RemoveAllOccuranceMain {
             {
                 nl.add(var);
             }
-
         }
         return nl;
     }
